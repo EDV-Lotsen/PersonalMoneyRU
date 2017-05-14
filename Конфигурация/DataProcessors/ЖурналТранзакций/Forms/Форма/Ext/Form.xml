@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+	<CommandBarLocation>None</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаВерх" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа верх</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа верх</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВерхРасширеннаяПодсказка" id="31"/>
+			<ChildItems>
+				<Button name="КомандаОбновить" id="28">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.КомандаОбновить</CommandName>
+					<ExtendedTooltip name="КомандаОбновитьРасширеннаяПодсказка" id="29"/>
+				</Button>
+				<InputField name="Период" id="17">
+					<DataPath>Период</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Width>30</Width>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="19"/>
+					<Events>
+						<Event name="OnChange">ПериодПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОстаток" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Balance</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>style:ButtonTextColor</TitleTextColor>
+			<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Balance</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>35</Width>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаОстатокРасширеннаяПодсказка" id="33"/>
+			<ChildItems>
+				<LabelField name="НачальныйОстаток" id="34">
+					<DataPath>НачальныйОстаток</DataPath>
+					<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ContextMenu name="НачальныйОстатокКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="НачальныйОстатокРасширеннаяПодсказка" id="36"/>
+				</LabelField>
+				<LabelField name="КонечныйОстаток" id="37">
+					<DataPath>КонечныйОстаток</DataPath>
+					<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ContextMenu name="КонечныйОстатокКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="КонечныйОстатокРасширеннаяПодсказка" id="39"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ЖурналТранзакций" id="1">
+			<Representation>List</Representation>
+			<ReadOnly>true</ReadOnly>
+			<Width>33</Width>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ЖурналТранзакций</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ЖурналТранзакцийКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ЖурналТранзакцийКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ЖурналТранзакцийНайти" id="26">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.ЖурналТранзакций.StandardCommand.Find</CommandName>
+						<ExtendedTooltip name="ЖурналТранзакцийНайтиРасширеннаяПодсказка" id="27"/>
+					</Button>
+					<Button name="ЖурналТранзакцийОтменитьПоиск" id="24">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.ЖурналТранзакций.StandardCommand.CancelSearch</CommandName>
+						<ExtendedTooltip name="ЖурналТранзакцийОтменитьПоискРасширеннаяПодсказка" id="25"/>
+					</Button>
+					<Button name="ЖурналТранзакцийСортироватьСписокПоВозрастанию" id="20">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.ЖурналТранзакций.StandardCommand.SortListAsc</CommandName>
+						<ExtendedTooltip name="ЖурналТранзакцийСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="21"/>
+					</Button>
+					<Button name="ЖурналТранзакцийСортироватьСписокПоУбыванию" id="22">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.ЖурналТранзакций.StandardCommand.SortListDesc</CommandName>
+						<ExtendedTooltip name="ЖурналТранзакцийСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="23"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ЖурналТранзакцийРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ЖурналТранзакцийSearchString" id="40">
+				<AdditionSource>
+					<Item>ЖурналТранзакций</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЖурналТранзакцийSearchStringContextMenu" id="41"/>
+				<ExtendedTooltip name="ЖурналТранзакцийSearchStringExtendedTooltip" id="42"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЖурналТранзакцийViewStatus" id="43">
+				<AdditionSource>
+					<Item>ЖурналТранзакций</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЖурналТранзакцийViewStatusContextMenu" id="44"/>
+				<ExtendedTooltip name="ЖурналТранзакцийViewStatusExtendedTooltip" id="45"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЖурналТранзакцийSearchControl" id="46">
+				<AdditionSource>
+					<Item>ЖурналТранзакций</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЖурналТранзакцийSearchControlContextMenu" id="47"/>
+				<ExtendedTooltip name="ЖурналТранзакцийSearchControlExtendedTooltip" id="48"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ЖурналТранзакцийВыбор</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ЖурналТранзакцийПериод" id="5">
+					<DataPath>ЖурналТранзакций.Период</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>7</Width>
+					<ContextMenu name="ЖурналТранзакцийПериодКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ЖурналТранзакцийПериодРасширеннаяПодсказка" id="7"/>
+				</InputField>
+				<InputField name="ЖурналТранзакцийСтатья" id="8">
+					<DataPath>ЖурналТранзакций.СтатьяДДС</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>10</Width>
+					<ContextMenu name="ЖурналТранзакцийСтатьяКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ЖурналТранзакцийСтатьяРасширеннаяПодсказка" id="10"/>
+				</InputField>
+				<InputField name="ЖурналТранзакцийСумма" id="11">
+					<DataPath>ЖурналТранзакций.Сумма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>7</Width>
+					<ContextMenu name="ЖурналТранзакцийСуммаКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ЖурналТранзакцийСуммаРасширеннаяПодсказка" id="13"/>
+				</InputField>
+				<InputField name="ЖурналТранзакцийОперация" id="14">
+					<DataPath>ЖурналТранзакций.Операция</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>10</Width>
+					<ContextMenu name="ЖурналТранзакцийОперацияКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ЖурналТранзакцийОперацияРасширеннаяПодсказка" id="16"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЖурналТранзакций</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ЖурналТранзакций" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Журнал транзакций</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Transaction list</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Период" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Date</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатьяДДС" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статья</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Item</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтатьиДДС</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Сумма" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Операция" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Операция</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Operation
+</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>25</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Регистратор" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистратор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Период" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Period</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НачальныйОстаток" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начало</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Start</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КонечныйОстаток" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конец</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>End</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ЖурналТранзакцийСумма</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ЖурналТранзакций.Сумма</dcsset:left>
+						<dcsset:comparisonType>Less</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>TextColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ЖурналТранзакцийСумма</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ЖурналТранзакций.Сумма</dcsset:left>
+						<dcsset:comparisonType>Greater</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>TextColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#007A00</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаОбновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Refresh</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.КартинкаОбновить</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаОбновить</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Кошелек">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Кошельки</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

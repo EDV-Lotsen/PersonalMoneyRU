@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаВалюты" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа валюты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа валюты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВалютыРасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<PictureDecoration name="ДекорацияВалюты" id="15">
+					<Width>6</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация валюты</v8:content>
+						</v8:item>
+					</Title>
+					<PictureSize>Proportionally</PictureSize>
+					<Picture>
+						<xr:Ref>CommonPicture.Валюты</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ДекорацияВалютыКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="ДекорацияВалютыРасширеннаяПодсказка" id="17"/>
+				</PictureDecoration>
+				<Button name="ОткрытьСправочникВалюты" id="5">
+					<Type>UsualButton</Type>
+					<Width>32</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.ОткрытьСправочникВалюты</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="ОткрытьСправочникВалютыРасширеннаяПодсказка" id="6"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКошельки" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа валюты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа валюты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКошелькиРасширеннаяПодсказка" id="19"/>
+			<ChildItems>
+				<PictureDecoration name="ДекорацияКошельки" id="20">
+					<Width>6</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация валюты</v8:content>
+						</v8:item>
+					</Title>
+					<PictureSize>Proportionally</PictureSize>
+					<Picture>
+						<xr:Ref>CommonPicture.Кошельки</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ДекорацияКошелькиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДекорацияКошелькиРасширеннаяПодсказка" id="22"/>
+				</PictureDecoration>
+				<Button name="ОткрытьСправочникКошельки" id="1">
+					<Type>UsualButton</Type>
+					<Width>32</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.ОткрытьСправочникКошельки</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="ОткрытьСправочникКошелькиРасширеннаяПодсказка" id="2"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСтатьиДДС" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа валюты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа валюты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСтатьиДДСРасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<PictureDecoration name="ДекорацияСтатьиДДС" id="27">
+					<Width>6</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация статьи ДДС</v8:content>
+						</v8:item>
+					</Title>
+					<PictureSize>Proportionally</PictureSize>
+					<Picture>
+						<xr:Ref>CommonPicture.СтатьиДДС</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ДекорацияСтатьиДДСКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ДекорацияСтатьиДДСРасширеннаяПодсказка" id="29"/>
+				</PictureDecoration>
+				<Button name="ОткрытьСправочникСтатьиДДС" id="3">
+					<Type>UsualButton</Type>
+					<Width>32</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.ОткрытьСправочникСтатьиДДС</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="ОткрытьСправочникСтатьиДДСРасширеннаяПодсказка" id="4"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСтатьиПлана" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа валюты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа валюты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСтатьиПланаРасширеннаяПодсказка" id="33"/>
+			<ChildItems>
+				<PictureDecoration name="ДекорацияСтатьиПлана" id="34">
+					<Width>6</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация статьи плана</v8:content>
+						</v8:item>
+					</Title>
+					<PictureSize>Proportionally</PictureSize>
+					<Picture>
+						<xr:Ref>CommonPicture.СтатьяПлана</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ДекорацияСтатьиПланаКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ДекорацияСтатьиПланаРасширеннаяПодсказка" id="36"/>
+				</PictureDecoration>
+				<Button name="ОткрытьСправочникСтатьиПлана" id="9">
+					<Type>UsualButton</Type>
+					<Width>32</Width>
+					<CommandName>Form.Command.ОткрытьСправочникСтатьиПлана</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="ОткрытьСправочникСтатьиПланаРасширеннаяПодсказка" id="10"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПартнеры" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа партнеры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа валюты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПартнерыРасширеннаяПодсказка" id="47"/>
+			<ChildItems>
+				<PictureDecoration name="ДекорацияПартнеры" id="48">
+					<Width>6</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация партнеры</v8:content>
+						</v8:item>
+					</Title>
+					<PictureSize>Proportionally</PictureSize>
+					<Picture>
+						<xr:Ref>CommonPicture.Контрагенты</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ДекорацияПартнерыКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ДекорацияПартнерыРасширеннаяПодсказка" id="50"/>
+				</PictureDecoration>
+				<Button name="ОткрытьСправочникКонтрагенты" id="7">
+					<Type>UsualButton</Type>
+					<Width>32</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.ОткрытьСправочникКонтрагенты</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="ОткрытьСправочникКонтрагентыРасширеннаяПодсказка" id="8"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПользователи" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользователи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа валюты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПользователиРасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<PictureDecoration name="ДекорацияПользователи" id="41">
+					<Width>6</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация пользователи</v8:content>
+						</v8:item>
+					</Title>
+					<PictureSize>Proportionally</PictureSize>
+					<Picture>
+						<xr:Ref>CommonPicture.Пользователи</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ДекорацияПользователиКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ДекорацияПользователиРасширеннаяПодсказка" id="43"/>
+				</PictureDecoration>
+				<Button name="ОткрытьСправочникПользователи" id="11">
+					<Type>UsualButton</Type>
+					<Width>32</Width>
+					<CommandName>Form.Command.ОткрытьСправочникПользователи</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="ОткрытьСправочникПользователиРасширеннаяПодсказка" id="12"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="ОткрытьСправочникКошельки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кошельки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Wallets</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть справочник кошельки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСправочникКошельки</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОткрытьСправочникСтатьиДДС" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статьи доходов и расходов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Items of income/expenditure</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть справочник статьи ДДС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСправочникСтатьиДДС</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОткрытьСправочникВалюты" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Currencies</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть справочник валюты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСправочникВалюты</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОткрытьСправочникКонтрагенты" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Партнеры</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Partners</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть справочник контрагенты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСправочникКонтрагенты</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОткрытьСправочникСтатьиПлана" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статьи плана</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Items of planned expences</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть справочник статьи плана</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСправочникСтатьиПлана</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОткрытьСправочникПользователи" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователи</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Users</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть справочник пользователи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСправочникПользователи</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

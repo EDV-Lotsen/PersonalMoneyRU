@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Button name="ОткрытьЖурнал" id="1">
+			<Type>UsualButton</Type>
+			<Width>32</Width>
+			<Height>1</Height>
+			<CommandName>Form.Command.ОткрытьЖурнал</CommandName>
+			<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+			<ExtendedTooltip name="ОткрытьЖурналРасширеннаяПодсказка" id="2"/>
+		</Button>
+		<UsualGroup name="ГруппаПриходы" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа приходы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа приходы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПриходыРасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<Button name="КомандаПриходыДенег" id="11">
+					<Type>UsualButton</Type>
+					<Width>26</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.КомандаПриходыДенег</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="КомандаПриходыДенегРасширеннаяПодсказка" id="12"/>
+				</Button>
+				<Button name="НовыйПриходДенег" id="5">
+					<Type>UsualButton</Type>
+					<Width>5</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.НовыйПриходДенег</CommandName>
+					<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>New</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="НовыйПриходДенегРасширеннаяПодсказка" id="6"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРасходы" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа расходы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа расходы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРасходыРасширеннаяПодсказка" id="16"/>
+			<ChildItems>
+				<Button name="КомандаРасходыДенег" id="17">
+					<Type>UsualButton</Type>
+					<Width>26</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.КомандаРасходыДенег</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="КомандаРасходыДенегРасширеннаяПодсказка" id="18"/>
+				</Button>
+				<Button name="НовыйРасходДенег" id="7">
+					<Type>UsualButton</Type>
+					<Width>5</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.НовыйРасходДенег</CommandName>
+					<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="НовыйРасходДенегРасширеннаяПодсказка" id="8"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПеремещения" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа перемещения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа перемещения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПеремещенияРасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<Button name="КомандаПеремещенияДенег" id="21">
+					<Type>UsualButton</Type>
+					<Width>26</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.КомандаПеремещенияДенег</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="КомандаПеремещенияДенегРасширеннаяПодсказка" id="22"/>
+				</Button>
+				<Button name="НовоеПеремещениеДенег" id="9">
+					<Type>UsualButton</Type>
+					<Width>5</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.НовоеПеремещениеДенег</CommandName>
+					<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="НовоеПеремещениеДенегРасширеннаяПодсказка" id="10"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДолги" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа долги</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа долги</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДолгиРасширеннаяПодсказка" id="24"/>
+			<ChildItems>
+				<Button name="КомандаДолги" id="25">
+					<Type>UsualButton</Type>
+					<Width>26</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.КомандаДолги</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="КомандаДолгиРасширеннаяПодсказка" id="26"/>
+				</Button>
+				<Button name="НовыйДолг" id="3">
+					<Type>UsualButton</Type>
+					<Width>5</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.НовыйДолг</CommandName>
+					<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="НовыйДолгРасширеннаяПодсказка" id="4"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="ОткрытьЖурнал" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Журнал</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>All operations</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть журнал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Журнал</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьЖурнал</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="НовыйДолг" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>New</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новый долг</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НовыйДолг</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="НовыйПриходДенег" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новый приход денег</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новый приход денег</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НовыйПриходДенег</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="НовыйРасходДенег" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>New</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новый расход денег</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НовыйРасходДенег</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="НовоеПеремещениеДенег" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новый</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>New</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новое перемещение денег</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НовоеПеремещениеДенег</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="КомандаПриходыДенег" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приходы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Incomes</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда приходы денег</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Приход</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаПриходыДенег</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаРасходыДенег" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расходы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Expences</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда расходы денег</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Расход</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаРасходыДенег</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаПеремещенияДенег" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перемещения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Money transfers</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда перемещения денег</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Перемещение</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаПеремещенияДенег</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаДолги" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Долги</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Debts</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда долги</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Долги</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаДолги</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>
